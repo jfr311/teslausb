@@ -44,7 +44,7 @@ function read_setup_variables {
   done
 
   # set defaults for things not set in the config
-  REPO=${REPO:-marcone}
+  REPO=${REPO:-jfr311}
   BRANCH=${BRANCH:-main-dev}
   CONFIGURE_ARCHIVING=${CONFIGURE_ARCHIVING:-true}
   UPGRADE_PACKAGES=${UPGRADE_PACKAGES:-false}
