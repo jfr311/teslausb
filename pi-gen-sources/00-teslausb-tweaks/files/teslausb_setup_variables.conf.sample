@@ -59,6 +59,7 @@ export CAM_SIZE=30G
 # Wifi setup information. Note that Raspberry Pi Zero W only supports 2.4 GHz wifi
 export SSID='your_ssid'
 export WIFIPASS='your_pass'
+#export LOCALIP='192.168.0.99'
 
 # uncomment to enable a Samba/CIFS server that makes the recordings
 # available as a network share
