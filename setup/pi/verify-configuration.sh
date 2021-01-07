@@ -107,7 +107,7 @@ function check_setup_teslausb () {
   if ! grep selfupdate /root/bin/setup-teslausb > /dev/null
   then
     setup_progress "setup-teslausb is outdated, attempting update"
-    if curl --fail -s -o /root/bin/setup-teslausb.new https://raw.githubusercontent.com/jfr311/teslausb/main-dev/setup/pi/setup-teslausb
+    if curl --fail -s -o /root/bin/setup-teslausb.new https://raw.githubusercontent.com/jfr311/teslausb/master/setup/pi/setup-teslausb
     then
       if /root/bin/remountfs_rw > /dev/null && mv /root/bin/setup-teslausb.new /root/bin/setup-teslausb && chmod +x /root/bin/setup-teslausb
       then
