@@ -4,12 +4,12 @@ function connectionmonitor {
   while true
   do
     # shellcheck disable=SC2034
-    for i in {1..5}
+    for i in {1..10}
     do
       if timeout 6 /root/bin/archive-is-reachable.sh "$ARCHIVE_SERVER"
       then
         # sleep and then continue outer loop
-        sleep 5
+        sleep 10
         continue 2
       fi
     done
