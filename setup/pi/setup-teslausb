@@ -778,6 +778,7 @@ then
   echo "source /root/bin/setup-teslausb" >> /root/.bashrc
 fi
 
+echo "Set local ip address"
 if [ -n "${LOCALIP:+x}" ]
 then
   if ! grep -q inform /etc/dhcpcd.conf
